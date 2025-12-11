@@ -15,6 +15,14 @@ This React application is a technical evaluation submission that demonstrates:
 - Responsive UI design
 - Proper error handling and reconnection logic
 
+## 📸 Application Preview
+
+### Login Screen
+![Kabaw Chat Login](./screenshots/app-screenshot.png)
+*Modern chat application with real-time WebSocket communication*
+
+> **Note**: The application features a clean login interface, real-time messaging, connection status indicators, and full responsive design.
+
 ## ✨ Features
 
 ### Core Functionality
