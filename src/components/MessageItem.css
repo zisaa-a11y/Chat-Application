@@ -1,0 +1,132 @@
+.message-item {
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 12px;
+  max-width: 70%;
+  word-wrap: break-word;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* System messages */
+.system-message {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  max-width: 100%;
+  text-align: center;
+  margin: 12px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.system-icon {
+  font-size: 1.2rem;
+}
+
+.system-content {
+  opacity: 0.9;
+}
+
+/* Own messages (right side) */
+.own-message {
+  background: linear-gradient(145deg, #667eea, #764ba2);
+  color: #ffffff;
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+/* Other users' messages (left side) */
+.other-message {
+  background: #ffffff;
+  color: #333;
+  margin-right: auto;
+  align-self: flex-start;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Message header */
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  gap: 12px;
+}
+
+.message-username {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.own-message .message-username {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.other-message .message-username {
+  color: #667eea;
+}
+
+.message-time {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* Message content */
+.message-content {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 4px 0;
+}
+
+/* User ID display */
+.message-user-id {
+  font-size: 0.7rem;
+  opacity: 0.6;
+  margin-top: 6px;
+  font-family: monospace;
+}
+
+.own-message .message-user-id {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.other-message .message-user-id {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .message-item {
+    max-width: 85%;
+    padding: 10px 14px;
+  }
+
+  .message-content {
+    font-size: 0.95rem;
+  }
+
+  .message-username {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .message-item {
+    max-width: 90%;
+    padding: 8px 12px;
+  }
+}
